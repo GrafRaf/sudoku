@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { select, NgRedux } from '@angular-redux/store';
+import { Observable } from 'rxjs/Observable';
+import { IAppState } from '../../store/model';
 
 @Component({
   selector: 'app-pause-page',
@@ -7,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PausePageComponent implements OnInit {
 
-  constructor() { }
+  @select(state => state.game.level) level$: Observable<number>;
+
+  constructor(private ngRedux: NgRedux<IAppState>) { }
 
   ngOnInit() {
   }

@@ -5,6 +5,8 @@ import { GamePageComponent } from './game-page/game-page.component';
 import { PausePageComponent } from './pause-page/pause-page.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
+import { StopPageComponent } from './stop-page/stop-page.component';
 
 @NgModule({
   imports: [
@@ -12,6 +14,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     RouterModule
   ],
-  declarations: [StartPageComponent, GamePageComponent, PausePageComponent]
+  declarations: [StartPageComponent, GamePageComponent, PausePageComponent, SettingsPageComponent, StopPageComponent]
 })
 export class PagesModule { }

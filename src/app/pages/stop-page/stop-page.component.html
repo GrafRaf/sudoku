@@ -1,0 +1,12 @@
+<p>
+  stop-page works!
+  Really stop game ?
+</p>
+<ul>
+  <li>
+    <a [routerLink]="[ '/start' ]">Yes</a>
+  </li>
+  <li>
+    <a [routerLink]="[ '/game', level$ | async ]">No</a>
+  </li>
+</ul>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgRedux } from '@angular-redux/store';
+import { IAppState } from '../../store/model';
 
 @Component({
   selector: 'app-game-page',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GamePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ngRedux: NgRedux<IAppState>) { }
 
   ngOnInit() {
   }
